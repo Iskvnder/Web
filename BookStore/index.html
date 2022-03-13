@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Ėtagère à Livres</title>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMj8Xc5_jA0tqVHCoFHCk-2sHt4imItA&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+        <link rel="stylesheet" type="text/css" href="style.css" /> <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">         
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="./scripts/jquery-1.4.3.min.js"></script>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   
+	<script type="text/javascript" src="./scripts/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+    <script type="text/javascript" src="./scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $(document).ready(function(){
+      $("a.photo").fancybox({
+        transitionIn:'elastic',
+      transitionOut:'elastic',
+      speedIn:300,
+      speedOut:300,
+      hideOnOverlayClick: true
+      });    
+    });
+    </script>
+    	<link rel="stylesheet" type="text/css" href="./scripts/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+          </head>
+      <body> 
+          
+        <section class="header animate__animated animate__slideInDown">
+            <div class="inheader">
+                <img id="logo" src="images/logo.png" alt=""> 
+                <p id="name">Étagère&nbsp;à&nbsp;Livrese</p>
+                
+               <ul id="ul1">
+                   <li id="li1"><a id="ck" href="index1.html">ABOUT US</a></li>
+                   <li id="li1"><a href="#popup"><button onclick="popupworking()" id="b1" class="popup_link">Language</button></a></li>
+                   <li id="li1"><img id="cl" src="images/chooselang.png" alt=""></li>
+                   <li id="li1"><a href="#popup2"><button button onclick="popupworking()" id="b2" class="popup_link">Sign in</button></a></li>
+                   <li id="li1"><img id="log" src="images/login.png" alt=""></li>
+                   <li id="li1"><a id="user_name"></a></li>
+                 </ul></div>
+                 
+        </section>  
+
+        <div id="popup" class="popup">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_body">
+                <div class="popup_content">
+                    <a href="#header" class="popup_close" onclick="popupstop()"><img id="cancelbutton" src="images/cancel.png" alt=""></a>
+                    <ul id="ul0">
+                        <li id="li0">
+                            <select class="dropdown" id="select_language" onchange="document.location=this.options[this.selectedIndex].value" name=select>
+                                <option value="">ENGLISH</option>
+                                <option value="">RUSSIAN</option>
+                                <option value="">SPANISH</option>
+                                <option value="">ITALIAN</option>
+                                <option value="">FRENCH</option>
+                            </select>
+                        </li>
+                        <li id="li0">
+                            <a href="" ><button id="enter">ENTER</button></a>
+                        </li>
+                    </ul>
+                    
+                    
+                </div>
+            </div>
+        </div> 
+
+        <div id="popup2" class="popup2">
+            <a href="#header" class="popup2area"></a>
+            <div class="popup2body">
+                <div class="popup2content">
+                    <a href="#header" class="popup2close" onclick="popupstop()"><img id="cancelbutton" src="images/cancel.png" alt="" ></a>
+                    <ul id="ul001">
+                        <li id="li001">
+                            <h2 id="loggin">SIGN IN</h2>
+                        </li>
+
+                        <li id="li001">
+                            <p id="notyet">Not yet a member? Click <a href="#" id="here">here</a> to Sign Up.</p>
+                        </li>
+
+                        <li id="li001">
+                            <a id="logfb" href="https://www.facebook.com/login.php?skip_api_login=1&api_key=922203111221472&kid_directed_site=0&app_id=922203111221472&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fapp_id%3D922203111221472%26cbt%3D1604907329833%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df3c6678fe0c5ebc%2526domain%253Dspl.greygoose.com%2526origin%253Dhttps%25253A%25252F%25252Fspl.greygoose.com%25252Ff3fa1b761b4aa1%2526relation%253Dopener%26client_id%3D922203111221472%26display%3Dpopup%26domain%3Dspl.greygoose.com%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fspl.greygoose.com%252Flogin.htm%253Frealm%253DgreygooseUK%2526origin%253Dhttps%25253A%25252F%25252Fwww.greygoose.com%2526customCss%253D%2526lang%253Den%2526countryCode%253DKZ.KZ%2526a4cUm%253D%2526continueAsGuestButton%253D%2526_ga%253D2.70597392.1254342121.1604429953-924496762.1604429953%26locale%3Den_US%26logger_id%3Df284dc2fd3f50c4%26origin%3D1%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df261519ce561a74%2526domain%253Dspl.greygoose.com%2526origin%253Dhttps%25253A%25252F%25252Fspl.greygoose.com%25252Ff3fa1b761b4aa1%2526relation%253Dopener%2526frame%253Df2973d69dfa40e%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26scope%3Demail%252Cuser_birthday%252Cuser_age_range%26sdk%3Djoey%26ret%3Dlogin%26fbapp_pres%3D0&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df261519ce561a74%26domain%3Dspl.greygoose.com%26origin%3Dhttps%253A%252F%252Fspl.greygoose.com%252Ff3fa1b761b4aa1%26relation%3Dopener%26frame%3Df2973d69dfa40e%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=popup&locale=en_US&pl_dbl=0"><button id="facebook">SIGN IN WITH FACEBOOK</button></a>
+                        </li>
+                      <li id="li001"><h5 id=""oror>OR</h5></li>
+                        <li id="li001">
+                            <input 
+                            id="email"
+                            type="text"
+                            placeholder="Email"
+                          />
+                        
+                        </li>
+                        <li id="li001">
+                            <input
+                            id="password"
+                            type="password"
+                            placeholder="Password"
+                          />
+                        </li>
+                        <li id="li001">
+                            <a href="#popup3" id="forgot">Forgoten password?</a>
+                        </li>
+                        <li id="li001">
+                            <a href="" id="sigsig"><button onclick="login(email.value)" id="signin1">Sign In</button></a>
+                        </li>
+                        <li id="li001">
+                            <label class="container">Remember me
+                                <span class="checkmark"></span>
+                                <input type="checkbox" checked="checked">
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      
+        <div id="popup3" class="popup3">
+            <a href="#header" class="popup3area"></a>
+            <div class="popup3body">
+                <div class="popup3content">
+                    <a href="#header" class="popup3close" onclick="popupstop()">X</a>
+                    <ul id="u010">
+                        <li id="li010">
+                            <h2 id="forg">FORGOTTEN YOUR</br>PASSWORD?</h2>
+                        </li>
+                        <li id="li010">
+                            <h4 id="ifu">If you have forgotten your password, please</br>enter the required information below to receive</br>instructions on how to reset it</h4>
+                        </li>
+                        <li id="li010">
+                            <input
+                            id="emailfor"
+                            type="text"
+                            placeholder="Email Adress*"
+                          />
+                        </li>
+                        <li id="li010">
+                            <a href="" ><button id="sumbit">Sumbit</button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+
+
+            <section class="home">
+                <div id="lllo" class="animate__animated animate__bounceInDown"></div>
+                <div class="home__video">
+                    <video id ="video" src="images/videoplayback.mp4" autoplay loop muted></video>
+                </div>
+            </section>
+
+
+            <section class="block1 show-on-scroll" data-animtype="inRight">
+                <div class="inblock">
+                    <ul id="ul2">
+                        <li id="li2"><p id="text1">Ėtagère à Livres®</p></li>
+                        <li id="li2"><img id="fra" src="https://www.greygoose.com/images/greygoose/icons/theme-dark-flag-decoration.svg" alt=""></li>
+                        <li id="li2"><h1 id="h1">READ WITH</br>PLEASURE</h1></li>
+                        <li id="li2"><p id="text2">If someone near you is immersed in reading a book, then<br> consider that they are not near you - they are somewhere else; <br> they have nothing to do with you - they communicate with other<br> people.
+                            Karel Chapek "How to Read a Book"</p></li> 
+                        <li id="li2"><a href="https://www.iedunote.com/reading-techniques"><button id="b3">Explore Reading Techniques with iedunote</button></a></li>
+                    </ul>
+                    <img id="reader" class="animate__animated animate__bounce" data-aos="fade-left" src="images/reader.jpg" alt="">
+                </div>
+            </section>
+             
+             <section class="block2 show-on-scroll" data-animtype="inLeft">
+                <div class = "inblock2">
+                    <img id="img77" src="images/reader22.jpg" alt="">
+                    <ul id="ul3">
+                        <li id="li3"><p id="text12">FEATURED BY IMMORTAL NAMES</p></li>
+                        <li id="li3"><p id="text22">BEST OF FAIRY TALE</p></li>
+                        <li id="li3"><a href=""><button id="b4">Explore more</button></a></li>
+                    </ul>
+                    <img id="img99" src="images/reader2.jpg" alt=""> 
+
+                    <ul id="ul4">
+                       <li id="li4"><p id="classic">FAIRY TALE</p></li>
+                       <li id="li4"><img id="franfl" src="https://www.greygoose.com/images/greygoose/icons/theme-normal-flag-decoration-centered.svg" alt=""></li>
+                       <li id="li4"><h1 id="text44">READ TIMELESS</br>WORKS</h1></li>
+                   </ul>
+                    
+                </div>
+            </section>
+
+             <section  class="block3 show-on-scroll" data-animtype="inRight">
+                 <div class="inblock3">
+                     <img id="img47" src="images/reader33.jpg" alt="">
+
+                     <ul id="ul5">
+                         <img id="franflfl" src="https://www.greygoose.com/images/greygoose/icons/theme-normal-flag-decoration-centered.svg" alt="">
+                         
+                     </ul>
+
+                     <div class="inblock31">
+                         <img id="img111" src="images/reader3.jpg" alt="">
+                        <ul id="ul6">
+                            <li id="li6"><p id="text66">MOVIES BASED ON BOOKS</p></li><br>
+                            <li id="li6"><p id="text67" style="font-size: 20px;">“If you don't like to read, then you just haven't found the right book.”</p></li>
+                            <li id="li6"><a href="https://www.amazon.com/Movies/b?ie=UTF8&node=2858905011"><button id="b6">Watch in Amazon</button></a></li>
+                        </ul>
+                    </div>
+                 </div>
+             </section>
+             
+             <section class = "block4 show-on-scroll" data-animtype="inLeft">
+                 <div class="inblock4">
+                     <ul id="ul7">
+                         <li id="li7"><h2 id="lv">#MANGA</h2></li>
+                         <li id="li7"><h1 id="rais">MOST POPULAR JAPANESE MANGA</h1></li>
+                     </ul>
+                     <div id="ims">
+                        <a rel="gallery" class = "photo" href="images/manga1.jpg"><img id="small" src="images/manga1.jpg" width="250px" height="400px" alt=""></a>
+                        <a rel="gallery" class = "photo" href="images/manga2.jpg"><img id="small" src="images/manga2.jpg" width="250px" height="400px" alt=""></a>
+                        <a rel="gallery" class = "photo" href="images/manga3.jpg"><img id="small" src="images/manga3.jpg" width="250px" height="400px" alt=""></a>
+                        <a rel="gallery" class = "photo" href="images/manga4.jpg"><img id="small" src="images/manga4.jpg" width="250px" height="400px" alt=""></a>
+           
+                    </div>
+                 </div>
+             </section>
+             <section class="block5" data-aos="fade-right">
+                 <div class="inblock5">
+                     <ul id="ul8">
+                         <li id="li8">
+                            <h2 id="dm">GOLD COLLECTIONS</h2>
+                         </li>
+                         <li id="li8">
+                             <h1 id="ggv">The Witcher</h1>
+                         </li>
+                     </ul>
+                     <p id="bigtext">The Witcher is a series of fantasy novels <br> and short stories written by Polish author <br> Andrzej Sapkowski. The series revolves around <br> the titular "witcher", Geralt of Rivia. <br> The series of novels is known as <br> the Witcher Saga. </p>
+                     <ul class="thewitcherimgs">
+                        <li id="livo"><img class="vodimg1 show-on-scroll" data-animtype="inRight" src="images/geralt.jpg" width="800px" height="354px" alt=""></li>
+                     </ul>
+                 </div>
+             </section>
+             <section class="block6 show-on-scroll" data-animtype="inRight">
+                 <div class="inblock6 ">
+                     <ul id="ul9">
+                         <li id="li9"><h3 id="lvlv">#WRITEBOOKS</h3></li>
+                         <li id="li9"><h1 id="livelike">BBC <br>SHARE YOUR FEELINGS</br>WITH PEOPLE</h1></li>
+                         <li id="li9"><p id="seehow">Send us your works and perhaps we will publish them</p></li>
+                         <li id="li9"><a href="https://www.bbc.co.uk/writersroom"><button id="b7">MORE</button></a></li>
+                         
+                     </ul>
+                 </div>
+             </section>
+             <section class="lastblock">
+                 <div class="inlastblock">
+                     <h2 id="sr">READ NATURALLY</h2>
+                     <ul id="ul10">
+                         <li id="li10"><a href=""><img id="fb" src="https://www.greygoose.com/images/greygoose/icons/social-facebook.svg" alt=""></a></li>
+                         <li id="li10"><a href=""><img id="tw" src="https://www.greygoose.com/images/greygoose/icons/social-twitter.svg" alt=""></a></li>
+                         <li id="li10"><a href=""><img id="yt" src="https://www.greygoose.com/images/greygoose/icons/social-youtube.svg" alt=""></a></li>
+                         <li id="li10"><a href=""><img id="inst" src="https://www.greygoose.com/images/greygoose/icons/social-instagram.svg" alt=""></a></li>
+                     </ul>
+                     <ul id="ul11">
+                         <li id="li11"><a id="contact" href="">Contact</a></li>
+                         <li id="li11"><a id="terms" href="">Terms&Conditions</a></li>
+                         <li id="li11"><a id="privacy" href="">Privacy Policy</a></li>
+                         <li id="li11"><a id="cookiep" href="">Cookie Policy</a></li>
+                         <li id="li11"><a id="media" href="">Media</a></li>
+                         <li id="li11"><a id="career" href="">Careers</a></li>
+                         <li id="li11"><a id="faq" href="">FAQs</a></li>
+                     </ul>
+                 </div>
+             </section>
+             <script>
+  AOS.init();
+</script>
+<script src="js.js"></script>
+     </body>
+     </html>

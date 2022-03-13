@@ -1,0 +1,62 @@
+*{
+    margin: 0;}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    color: rgb(255, 255, 255);
+    padding: 0.7% 15%;
+    font-size: 30px;
+    background-color: rgb(48, 47, 47);
+    font-family: 'Playfair Display', serif;
+}
+
+.text{
+    font-family: 'Raleway', sans-serif;
+}
+
+#Fairy_Tales {
+    margin-top: 25px;
+    display: inline;
+    cursor: pointer;
+}
+#Comics{
+    margin-top: 25px;
+    display: inline;
+    cursor: pointer;
+}
+#Popular_Science {
+    margin-top: 25px;
+    display: inline;
+    cursor: pointer;
+}
+#Authors {
+    margin-top: 25px;
+    display: inline;
+    cursor: pointer;
+}
+
+
+#img {
+    float: left;
+}
+
+#h1 {
+    margin-left: 60%;
+    margin-top: 50px;
+    font-size: 80px;
+    margin-right: 5%;
+}
+
+#p1 {
+    margin-left: 50%;
+    margin-top: 8px;
+    font-size: 27px;
+    margin-right: 5%;
+}
+#p2 {
+    margin-left: 50%;
+    margin-top: 8px;
+    font-size: 27px;
+    margin-right: 5%;
+}
